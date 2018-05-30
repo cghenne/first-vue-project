@@ -1,0 +1,51 @@
+@import './colors';
+@import './components/_app-logo';
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  background-color: $title-color;
+  color: #fff;
+  padding: 20px;
+  margin: 20px;
+  display: block;
+}
+
+.index {
+  .title {
+    font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+    display: block;
+    font-weight: 300;
+    font-size: 100px;
+    color: $title-color;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: $subtitle-color;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+  }
+
+  // this is how you add an image from the css
+  a:hover {
+    background-image: url('~/assets/images/super-beach.jpeg');
+  }
+}
+
+.hello {
+  color: $title-color;
+
+  div {
+    margin-top: 50px;
+  }
+}
